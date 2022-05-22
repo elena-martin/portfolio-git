@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GIT Slideshow</title>
+<script>
+	let pagecount = 1;
+
+	function nextPage(){
+		if (pagecount == 2) {
+			pagecount -= 2
+		}
+		pagecount += 1;
+		console.log(pagecount);
+		displayPage();
+	}
+
+	function prevPage(){
+		if (pagecount == 1) {
+			pagecount += 2
+		}
+		pagecount -= 1;
+		console.log(pagecount);
+		displayPage();
+	}
+	function displayPage(){
+		if (pagecount == 1) {
+			view1();
+		}
+		if (pagecount == 2) {
+			view2();
+		}
+	};
+	
+</script>
+</head>
+<body>
+<div id="Nav">
+	<div id="Component_1__25" class="Component_1___25"onclick="prevPage()">
+		<svg class="Polygon_1" viewBox="0 0 107 44">
+			<path id="Polygon_1" d="M 53.49999618530273 0 L 107 44 L 0 44 Z">
+			</path>
+		</svg>
+	</div>
+	<div id="Component_2__26" class="Component_2___26"onclick="nextPage()">
+		<svg class="Polygon_2" viewBox="0 0 107 44">
+			<path id="Polygon_2" d="M 53.49999618530273 0 L 107 44 L 0 44 Z">
+			</path>
+		</svg>
+	</div>
+</div>
+<div id="GIT-Slide-1">
+	<svg class="Rectangle_1">
+		<rect id="Rectangle_1" rx="0" ry="0" x="0" y="0" width="712" height="268">
+		</rect>
+	</svg>
+	<svg class="Polygon_2_w" viewBox="0 0 107 44">
+		<path id="Polygon_2_w" d="M 53.49999618530273 0 L 107 44 L 0 44 Z">
+		</path>
+	</svg>
+	<div id="Component_1__16" class="Component_1___16">
+		<svg class="Polygon_1_y" viewBox="0 0 107 44">
+			<path id="Polygon_1_y" d="M 53.49999618530273 0 L 107 44 L 0 44 Z">
+			</path>
+		</svg>
+	</div>
+	<div id="Component_2__17" class="Component_2___17">
+		<svg class="Polygon_2_" viewBox="0 0 107 44">
+			<path id="Polygon_2_" d="M 53.49999618530273 0 L 107 44 L 0 44 Z">
+			</path>
+		</svg>
+	</div>
+	<div id="Coding__Web_Design">
+		<span>Coding & Web Design</span>
+	</div>
+	<div id="Group_14">
+		<svg class="Ellipse_4">
+			<ellipse id="Ellipse_4" rx="6" ry="6" cx="6" cy="6">
+			</ellipse>
+		</svg>
+	</div>
+</div>
+<div id="GIT-Slide-2">
+	<div id="Component_1__17" class="Component_1___17">
+		<svg class="Polygon_1_" viewBox="0 0 107 44">
+			<path id="Polygon_1_" d="M 53.49999618530273 0 L 107 44 L 0 44 Z">
+			</path>
+		</svg>
+	</div>
+	<div id="Component_2__18" class="Component_2___18">
+		<svg class="Polygon_2_ba" viewBox="0 0 107 44">
+			<path id="Polygon_2_ba" d="M 53.49999618530273 0 L 107 44 L 0 44 Z">
+			</path>
+		</svg>
+	</div>
+	<div id="twitch_chat_bot">
+		<span>twitch chat bot</span>
+	</div>
+	<svg class="Rectangle_1_bb">
+		<rect id="Rectangle_1_bb" rx="0" ry="0" x="0" y="0" width="712" height="268">
+		</rect>
+	</svg>
+	<div id="Group_14_bc">
+		<svg class="Ellipse_3">
+			<ellipse id="Ellipse_3" rx="6" ry="6" cx="6" cy="6">
+			</ellipse>
+		</svg>
+	</div>
+</div>
+</div>
+<script>
+
+	function view1(){
+		document.getElementById("GIT-Slide-1").setAttribute("style","visibility: visible");
+		document.getElementById("GIT-Slide-2").setAttribute("style","visibility: hidden");
+	};
+	function view2(){
+		document.getElementById("GIT-Slide-1").setAttribute("style","visibility: hidden");
+		document.getElementById("GIT-Slide-2").setAttribute("style","visibility: visible");
+
+	};
+
+	displayPage();
+
+</script>
+
+<style type="text/css">
+	:root {
+		--web-view-ids: Nav,GIT_-_Slide_1,GIT_-Slide_2;
+		--web-view-name: GIT - Slide 1;
+		--web-view-id: GIT_-_Slide_1;
+		--web-scale-to-fit: false;
+		--web-scale-to-fit-type: default;
+		--web-enable-scale-up: false;
+		--web-scale-on-resize: true;
+		--web-show-scale-controls: false;
+		--web-scale-on-double-click: false;
+		--web-center-horizontally: false;
+		--web-center-vertically: false;
+		--web-actual-size-on-double-click: false;
+		--web-navigate-on-keypress: false;
+		--web-refresh-for-changes: false;
+		--web-add-image-compare: false;
+		--web-show-by-media-query: false;
+		--web-application: false;
+		--web-show-navigation-controls: true;
+		--web-enable-deep-linking: true;
+		--web-is-overlay: false;
+	}
+	@media (min-width: 0px) {
+		.mediaViewInfo {
+			--web-view-name: Nav;
+			--web-view-id: Nav;
+			--web-scale-on-resize: true;
+			--web-show-navigation-controls: true;
+			--web-enable-deep-linking: true;
+		}
+		* {
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+			border: none;
+		}
+		#Nav {
+			position: absolute;
+			display: block;
+			width: 980px;
+			height: 400px;
+			overflow: hidden;
+			--web-view-name: Nav;
+			--web-view-id: Nav;
+			--web-scale-on-resize: true;
+			--web-show-navigation-controls: true;
+			--web-enable-deep-linking: true;
+			z-index: 30;
+		}
+		#Component_1__25 {
+			position: absolute;
+			width: 44px;
+			height: 107px;
+			left: 0px;
+			top: 147px;
+			overflow: visible;
+		}
+		#Polygon_1 {
+			fill: rgba(32,84,79,0.4);
+		}
+		#Polygon_1:hover {
+			fill: rgba(32,84,79,1);
+		}
+		.Polygon_1 {
+			overflow: visible;
+			position: absolute;
+			width: 107px;
+			height: 44px;
+			transform: translate(0px, 0px) matrix(1,0,0,1,-31.5,31.5) rotate(-90deg);
+			transform-origin: center;
+			left: 0px;
+			top: 0px;
+		}
+		#Component_2__26 {
+			position: absolute;
+			width: 44px;
+			height: 107px;
+			left: 936px;
+			top: 147px;
+			overflow: visible;
+		}
+		#Polygon_2 {
+			fill: rgba(32,84,79,0.4);
+		}
+		#Polygon_2:hover {
+			fill: rgba(32,84,79,1);
+		}
+		.Polygon_2 {
+			overflow: visible;
+			position: absolute;
+			width: 107px;
+			height: 44px;
+			transform: translate(0px, 0px) matrix(1,0,0,1,-31.5,31.5) rotate(90deg);
+			transform-origin: center;
+			left: 0px;
+			top: 0px;
+		}
+		#GIT_-_Slide_1 {
+			position: absolute;
+			display: block;
+			width: 980px;
+			height: 400px;
+			overflow: hidden;
+			--web-view-name: GIT - Slide 1;
+			--web-view-id: GIT_-_Slide_1;
+			--web-scale-on-resize: true;
+			--web-show-navigation-controls: true;
+			--web-enable-deep-linking: true;
+		}
+		#Rectangle_1 {
+			fill: rgba(44,115,108,1);
+		}
+		.Rectangle_1 {
+			position: absolute;
+			overflow: visible;
+			width: 712px;
+			height: 268px;
+			left: 134px;
+			top: 65px;
+		}
+		#Polygon_2_w {
+			fill: rgba(32,84,79,0);
+		}
+		.Polygon_2_w {
+			overflow: visible;
+			position: absolute;
+			width: 107px;
+			height: 44px;
+			transform: matrix(1,0,0,1,904.5,178.5) rotate(90deg);
+			transform-origin: center;
+			left: 0px;
+			top: 0px;
+		}
+		#Component_1__16 {
+			position: absolute;
+			width: 44px;
+			height: 107px;
+			left: 0px;
+			top: 147px;
+			overflow: visible;
+		}
+		#Polygon_1_y {
+			fill: rgba(32,84,79,0);
+		}
+		.Polygon_1_y {
+			overflow: visible;
+			position: absolute;
+			width: 107px;
+			height: 44px;
+			transform: translate(0px, 0px) matrix(1,0,0,1,-31.5,31.5) rotate(-90deg);
+			transform-origin: center;
+			left: 0px;
+			top: 0px;
+		}
+		#Component_2__17 {
+			position: absolute;
+			width: 44px;
+			height: 107px;
+			left: 936px;
+			top: 147px;
+			overflow: visible;
+		}
+		#Polygon_2_ {
+			fill: rgba(32,84,79,0);
+		}
+		.Polygon_2_ {
+			overflow: visible;
+			position: absolute;
+			width: 107px;
+			height: 44px;
+			transform: translate(0px, 0px) matrix(1,0,0,1,-31.5,31.5) rotate(90deg);
+			transform-origin: center;
+			left: 0px;
+			top: 0px;
+		}
+		#Coding__Web_Design {
+			left: 254px;
+			top: -8px;
+			position: absolute;
+			overflow: visible;
+			width: 474px;
+			white-space: nowrap;
+			text-align: left;
+			font-family: Heavitas;
+			font-style: normal;
+			font-weight: normal;
+			font-size: 37px;
+			color: rgba(32,84,79,1);
+		}
+		#Group_14 {
+			position: absolute;
+			width: 12px;
+			height: 12px;
+			left: 458px;
+			top: 383px;
+			overflow: visible;
+		}
+		#Ellipse_4 {
+			fill: rgba(32,84,79,1);
+		}
+		.Ellipse_4 {
+			position: absolute;
+			overflow: visible;
+			width: 12px;
+			height: 12px;
+			left: 0px;
+			top: 0px;
+		}
+		#GIT_-Slide_2 {
+			position: absolute;
+			display: block;
+			width: 980px;
+			height: 400px;
+			overflow: hidden;
+			--web-view-name: GIT -Slide 2;
+			--web-view-id: GIT_-Slide_2;
+			--web-scale-on-resize: true;
+			--web-show-navigation-controls: true;
+			--web-enable-deep-linking: true;
+		}
+		#Component_1__17 {
+			position: absolute;
+			width: 44px;
+			height: 107px;
+			left: 0px;
+			top: 147px;
+			overflow: visible;
+		}
+		#Polygon_1_ {
+			fill: rgba(32,84,79,0);
+		}
+		.Polygon_1_ {
+			overflow: visible;
+			position: absolute;
+			width: 107px;
+			height: 44px;
+			transform: translate(0px, 0px) matrix(1,0,0,1,-31.5,31.5) rotate(-90deg);
+			transform-origin: center;
+			left: 0px;
+			top: 0px;
+		}
+		#Component_2__18 {
+			position: absolute;
+			width: 44px;
+			height: 107px;
+			left: 936px;
+			top: 147px;
+			overflow: visible;
+		}
+		#Polygon_2_ba {
+			fill: rgba(32,84,79,0);
+		}
+		.Polygon_2_ba {
+			overflow: visible;
+			position: absolute;
+			width: 107px;
+			height: 44px;
+			transform: translate(0px, 0px) matrix(1,0,0,1,-31.5,31.5) rotate(90deg);
+			transform-origin: center;
+			left: 0px;
+			top: 0px;
+		}
+		#twitch_chat_bot {
+			left: 307px;
+			top: -8px;
+			position: absolute;
+			overflow: visible;
+			width: 367px;
+			white-space: nowrap;
+			text-align: left;
+			font-family: Heavitas;
+			font-style: normal;
+			font-weight: normal;
+			font-size: 37px;
+			color: rgba(32,84,79,1);
+		}
+		#Rectangle_1_bb {
+			fill: rgba(44,115,108,1);
+		}
+		.Rectangle_1_bb {
+			position: absolute;
+			overflow: visible;
+			width: 712px;
+			height: 268px;
+			left: 134px;
+			top: 65px;
+		}
+		#Group_14_bc {
+			position: absolute;
+			width: 12px;
+			height: 12px;
+			left: 510px;
+			top: 383px;
+			overflow: visible;
+		}
+		#Ellipse_3 {
+			fill: rgba(32,84,79,1);
+		}
+		.Ellipse_3 {
+			position: absolute;
+			overflow: visible;
+			width: 12px;
+			height: 12px;
+			left: 0px;
+			top: 0px;
+		}
+	}
+	</style>
+</body>
+</html>
