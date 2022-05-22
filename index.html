@@ -139,28 +139,6 @@
 </script>
 
 <style type="text/css">
-	:root {
-		--web-view-ids: Nav,GIT_-_Slide_1,GIT_-Slide_2;
-		--web-view-name: GIT - Slide 1;
-		--web-view-id: GIT_-_Slide_1;
-		--web-scale-to-fit: false;
-		--web-scale-to-fit-type: default;
-		--web-enable-scale-up: false;
-		--web-scale-on-resize: true;
-		--web-show-scale-controls: false;
-		--web-scale-on-double-click: false;
-		--web-center-horizontally: false;
-		--web-center-vertically: false;
-		--web-actual-size-on-double-click: false;
-		--web-navigate-on-keypress: false;
-		--web-refresh-for-changes: false;
-		--web-add-image-compare: false;
-		--web-show-by-media-query: false;
-		--web-application: false;
-		--web-show-navigation-controls: true;
-		--web-enable-deep-linking: true;
-		--web-is-overlay: false;
-	}
 	@media (min-width: 0px) {
 		.mediaViewInfo {
 			--web-view-name: Nav;
@@ -174,6 +152,12 @@
 			padding: 0;
 			box-sizing: border-box;
 			border: none;
+			-webkit-touch-callout: none; /* iOS Safari */
+			-webkit-user-select: none; /* Safari */
+			-khtml-user-select: none; /* Konqueror HTML */
+			-moz-user-select: none; /* Old versions of Firefox */
+			-ms-user-select: none; /* Internet Explorer/Edge */
+			user-select: none; /* Non-prefixed version, currently supported by Chrome, Edge, Opera and Firefox */
 		}
 		#Nav {
 			position: absolute;
