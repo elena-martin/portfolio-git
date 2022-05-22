@@ -125,12 +125,12 @@
 <script>
 
 	function view1(){
-		document.getElementById("GIT-Slide-1").setAttribute("style","visibility: visible");
-		document.getElementById("GIT-Slide-2").setAttribute("style","visibility: hidden");
+		document.getElementById("GIT-Slide-1").setAttribute("style","opacity:1");
+		document.getElementById("GIT-Slide-2").setAttribute("style","opacity:0");
 	};
 	function view2(){
-		document.getElementById("GIT-Slide-1").setAttribute("style","visibility: hidden");
-		document.getElementById("GIT-Slide-2").setAttribute("style","visibility: visible");
+		document.getElementById("GIT-Slide-1").setAttribute("style","opacity:0");
+		document.getElementById("GIT-Slide-2").setAttribute("style","opacity:1");
 
 	};
 
@@ -152,12 +152,6 @@
 			padding: 0;
 			box-sizing: border-box;
 			border: none;
-			-webkit-touch-callout: none; /* iOS Safari */
-			-webkit-user-select: none; /* Safari */
-			-khtml-user-select: none; /* Konqueror HTML */
-			-moz-user-select: none; /* Old versions of Firefox */
-			-ms-user-select: none; /* Internet Explorer/Edge */
-			user-select: none; /* Non-prefixed version, currently supported by Chrome, Edge, Opera and Firefox */
 		}
 		#Nav {
 			position: absolute;
@@ -170,7 +164,6 @@
 			--web-scale-on-resize: true;
 			--web-show-navigation-controls: true;
 			--web-enable-deep-linking: true;
-			z-index: 30;
 		}
 		#Component_1__25 {
 			position: absolute;
@@ -180,12 +173,7 @@
 			top: 147px;
 			overflow: visible;
 		}
-		#Polygon_1 {
-			fill: rgba(32,84,79,0.4);
-		}
-		#Polygon_1:hover {
-			fill: rgba(32,84,79,1);
-		}
+
 		.Polygon_1 {
 			overflow: visible;
 			position: absolute;
@@ -195,6 +183,14 @@
 			transform-origin: center;
 			left: 0px;
 			top: 0px;
+			fill: rgba(32,84,79,0.4);
+			transition-property: fill;
+			transition-duration: .25s;
+			transition-timing-function: linear;
+			z-index: 31;
+		}
+		.Polygon_1:hover {
+			fill: rgba(32,84,79,1);
 		}
 		#Component_2__26 {
 			position: absolute;
@@ -203,12 +199,6 @@
 			left: 936px;
 			top: 147px;
 			overflow: visible;
-		}
-		#Polygon_2 {
-			fill: rgba(32,84,79,0.4);
-		}
-		#Polygon_2:hover {
-			fill: rgba(32,84,79,1);
 		}
 		.Polygon_2 {
 			overflow: visible;
@@ -219,8 +209,16 @@
 			transform-origin: center;
 			left: 0px;
 			top: 0px;
+			fill: rgba(32,84,79,0.4);
+			transition-property: fill;
+			transition-duration: .25s;
+			transition-timing-function: linear;
+			z-index: 31;
 		}
-		#GIT_-_Slide_1 {
+		.Polygon_2:hover {
+			fill: rgba(32,84,79,1);
+		}
+		#GIT-Slide-1 {
 			position: absolute;
 			display: block;
 			width: 980px;
@@ -231,6 +229,9 @@
 			--web-scale-on-resize: true;
 			--web-show-navigation-controls: true;
 			--web-enable-deep-linking: true;
+			transition-property: opacity;
+			transition-duration: 1s;
+			transition-timing-function: linear;
 		}
 		#Rectangle_1 {
 			fill: rgba(44,115,108,1);
@@ -352,7 +353,7 @@
 			top: 0px;
 		}
 	
-		#GIT_-Slide_2 {
+		#GIT-Slide-2 {
 			position: absolute;
 			display: block;
 			width: 980px;
@@ -363,6 +364,9 @@
 			--web-scale-on-resize: true;
 			--web-show-navigation-controls: true;
 			--web-enable-deep-linking: true;
+			transition-property: opacity;
+			transition-duration: 1s;
+			transition-timing-function: linear;
 		}
 		#Component_1__17 {
 			position: absolute;
