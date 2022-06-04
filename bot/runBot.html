@@ -2,12 +2,9 @@
     <head>
         <title>Activate Qimo</title>
         <script type = "text/javascript" src="qimoBot.js"></script>
-        <script>
-            
-        </script>
+        
     </head>
     <body>
-        
 
         <form>
             <label for="buildID">Select Streamer<br></label>
@@ -27,7 +24,14 @@
             </datalist>
         </form>
 
-        <input type="button" onclick=success();>Click Me!</input>
+        <script type="text/javascript">
+            function myFunction(){
+               WshShell = new ActiveXObject("Wscript.Shell"); //Create WScript Object
+               WshShell.run("./activate.bat"); // Please change the path and file name with your relevant available path in client system. This code can be used to execute .exe file as well
+            }
+            </script>
+            
+            <input type="button" value="Test Java Script" onClick="myFunction()">
     </body>
     
 
