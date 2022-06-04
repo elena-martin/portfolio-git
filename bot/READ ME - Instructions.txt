@@ -1,0 +1,1 @@
+Before opening & running qimoBot.js, run the attached MSI file to install Node.js and npm if you don't already have them.
