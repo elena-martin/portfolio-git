@@ -1,0 +1,25 @@
+{
+  "name": "qimo-bot",
+  "version": "1.0.0",
+  "description": "For use alongside PlayLive by Aquimo, Inc.",
+  "main": "qimoBot.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    ""
+  ],
+  "author": "Lena Martin",
+  "license": "ISC",
+  "dependencies": {
+    "jquery": "^3.6.0",
+    "jquery-csv": "^1.0.21",
+    "jsonpath": "^1.1.1",
+    "nodejs": "^0.0.0",
+    "requirejs": "^2.3.6",
+    "tmi.js": "^1.8.5"
+  },
+  "devDependencies": {
+    "@types/tmi.js": "^1.8.1"
+  }
+}
